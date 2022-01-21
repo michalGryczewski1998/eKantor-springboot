@@ -22,6 +22,11 @@ public class ApplicationController{
 //        return result;
 //    }
 
+    @RequestMapping("/start")
+    public String przykladowaAplikacja(){
+        return "Aplikacja Spring-Boot działa.";
+    }
+
     @RequestMapping ("/convert/{currencyFrom}/{currencyTo}/{time}")
     public String getCurrency(@PathVariable String currencyFrom, @PathVariable String currencyTo, @PathVariable String time) {
         float from = exchangeRateRepository.querryToDatabaseCurrencyFrom(currencyFrom,time);
