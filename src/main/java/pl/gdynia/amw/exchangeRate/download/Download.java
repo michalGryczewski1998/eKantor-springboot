@@ -19,7 +19,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 
 //@EnableScheduling
-@Component //służy do ładowania na starcie projektu
+//@Component //służy do ładowania na starcie projektu
 public class Download {
 
     private static final String POST_API_URL  = "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml";
